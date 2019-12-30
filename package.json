@@ -1,0 +1,27 @@
+{
+	"name": "theme-hbuilderx-soft-green-light",
+	"displayName": "%displayName%",
+	"description": "%description%",
+	"version": "0.0.1",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/qinains/theme-hbuilderx-soft-green-light"
+	},
+	"publisher": "lninl",
+	"license": "MIT",
+	"engines": {
+		"vscode": "*"
+	},
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "HBuilderX Soft Green Light",
+				"uiTheme": "vs",
+				"path": "./themes/hbuilderx-soft-green-light-color-theme.json"
+			}
+		]
+	}
+}
