@@ -10,4 +10,12 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [0.0.1]
 ### Added
-- Add logo
+- Add icon
+
+## [0.0.2]
+### Added
+- Add preview image
+
+## [0.0.3]
+### Changed
+- Change icon
