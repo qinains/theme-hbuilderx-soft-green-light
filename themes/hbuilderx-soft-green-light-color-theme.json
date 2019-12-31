@@ -77,6 +77,7 @@
 		"terminal.background": "#fffae8",
 		"terminal.foreground": "#616161",
 		"titleBar.activeBackground": "#eee8d5",
+		"tree.indentGuidesStroke": "#d8ca9e",
 		//"activityBar.inactiveForeground": "#584c2766",
 		//"activityBarBadge.foreground": "#ffffff",
 		//"badge.background": "#c4c4c4",
@@ -335,7 +336,6 @@
 		//"titleBar.activeForeground": "#333333",
 		//"titleBar.inactiveBackground": "#eee8d599",
 		//"titleBar.inactiveForeground": "#33333399",
-		//"tree.indentGuidesStroke": "#a9a9a9",
 		//"widget.shadow": "#a8a8a8"
 	},
 	"tokenColors": [

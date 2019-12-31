@@ -6,6 +6,10 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 
+## [0.0.5] - 2019-12-31
+### Changed
+- Change icon
+
 ## [0.0.4] - 2019-12-31
 ### Added
 - Add search preview image
