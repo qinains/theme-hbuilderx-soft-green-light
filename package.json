@@ -7,18 +7,29 @@
 		"type": "git",
 		"url": "https://github.com/qinains/theme-hbuilderx-soft-green-light"
 	},
+	"bugs": {
+		"url": "https://github.com/qinains/theme-hbuilderx-soft-green-light/issues"
+	},
 	"publisher": "lninl",
 	"license": "MIT",
 	"icon": "icon.png",
-	"galleryBanner": {
-		"color": "#fffae8",
-		"theme": "light"
-	},
 	"engines": {
 		"vscode": "*"
 	},
 	"categories": [
-		"Themes"
+		"Themes",
+		"Other"
+	],
+	"keywords": [
+		"health",
+		"hbuilder",
+		"hbuilderx",
+		"h5builder",
+		"green",
+		"soft green",
+		"yellow",
+		"solarized",
+		"light"
 	],
 	"contributes": {
 		"themes": [
