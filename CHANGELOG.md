@@ -6,16 +6,21 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 
-- Initial release
-
-## [0.0.1]
+## [0.0.4] - 2019-12-31
 ### Added
-- Add icon
+- Add search preview image
 
-## [0.0.2]
+### Changed
+- Change tab.border
+
+## [0.0.3] - 2019-12-31
+### Changed
+- Change icon
+
+## [0.0.2] - 2019-12-31
 ### Added
 - Add preview image
 
-## [0.0.3]
-### Changed
-- Change icon
+## [0.0.1] - 2019-12-31
+### Added
+- Add icon
