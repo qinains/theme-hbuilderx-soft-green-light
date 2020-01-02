@@ -2,7 +2,8 @@
 	"name": "theme-hbuilderx-soft-green-light",
 	"displayName": "%displayName%",
 	"description": "%description%",
-	"version": "0.0.5",
+	"version": "0.0.6",
+	"homepage": "https://github.com/qinains/theme-hbuilderx-soft-green-light/blob/master/README.md",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/qinains/theme-hbuilderx-soft-green-light"
@@ -39,5 +40,19 @@
 				"path": "./themes/hbuilderx-soft-green-light-color-theme.json"
 			}
 		]
+	},
+	"devDependencies": {
+		"@commitlint/cli": "^8.2.0",
+		"@commitlint/config-conventional": "^8.2.0",
+		"husky": "^3.1.0",
+		"vsce": "^1.71.0"
+	},
+	"scripts": {
+		"publish": "./node_modules/.bin/vsce publish"
+	},
+	"husky": {
+		"hooks": {
+			"commit-msg": "./node_modules/.bin/commitlint -E HUSKY_GIT_PARAMS"
+		}
 	}
 }

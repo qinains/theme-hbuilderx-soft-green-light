@@ -6,6 +6,10 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 
+## [0.0.6] - 2019-01-02
+### Added
+- Add install & develop document
+
 ## [0.0.5] - 2019-12-31
 ### Changed
 - Change icon
