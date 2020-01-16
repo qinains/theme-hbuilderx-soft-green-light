@@ -6,6 +6,10 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 
+## [1.0.1] - 2019-01-16
+### Changed
+- Change statusBar.debuggingBackground to green
+
 ## [1.0.0] - 2019-01-02
 ### Added
 - release 1.0.0
