@@ -42,10 +42,11 @@
 		]
 	},
 	"devDependencies": {
-		"@commitlint/cli": "^8.2.0",
-		"@commitlint/config-conventional": "^8.2.0",
+		"@commitlint/cli": "^8.3.5",
+		"@commitlint/config-conventional": "^8.3.4",
 		"husky": "^3.1.0",
-		"vsce": "^1.71.0"
+		"minimist": ">=1.2.2",
+		"vsce": "^1.74.0"
 	},
 	"scripts": {
 		"publish": "./node_modules/.bin/vsce publish"
