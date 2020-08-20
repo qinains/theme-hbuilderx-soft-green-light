@@ -27,3 +27,11 @@ Search the color in the file "themes/hbuilderx-soft-green-light-color-theme.json
 
 ### Save the theme
 "View -> Command Palette...", then type "Developer: Generate  Color Theme From Current Settings". Copy the code and paste the code in "themes/hbuilderx-soft-green-light-color-theme.json" file.
+
+## Publish
+```bash
+npm i vsce -g
+vsce login <your-publisher> ## paste "Personal Access Tokens"(https://dev.azure.com/ -> Users settings -> Personal access tokens -> New Token -> type Name -> Organization:All accessible organizations -> Scopes:Full access -> Create)
+vsce package
+vsce publish
+```
