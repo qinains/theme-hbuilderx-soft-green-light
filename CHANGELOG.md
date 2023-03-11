@@ -6,6 +6,10 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 
+## [1.0.3] - 2023-03-11
+### Changed
+- Change editor.selectionBackground
+
 ## [1.0.2] - 2020-08-20
 ### Changed
 - Change terminal.ansiBrightYellow
