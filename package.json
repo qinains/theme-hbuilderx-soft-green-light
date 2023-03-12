@@ -2,7 +2,7 @@
 	"name": "theme-hbuilderx-soft-green-light",
 	"displayName": "%displayName%",
 	"description": "%description%",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"homepage": "https://github.com/qinains/theme-hbuilderx-soft-green-light/blob/master/README.md",
 	"repository": {
 		"type": "git",
@@ -48,9 +48,9 @@
 	"devDependencies": {
 		"@commitlint/cli": "^17.4.4",
 		"@commitlint/config-conventional": "^8.3.4",
+		"@vscode/vsce": "^2.18.0",
 		"husky": "^3.1.0",
-		"minimist": ">=1.2.2",
-		"vsce": "^2.15.0"
+		"minimist": ">=1.2.2"
 	},
 	"scripts": {
 		"publish": "./node_modules/.bin/vsce publish"

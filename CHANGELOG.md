@@ -6,6 +6,10 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 
+## [1.0.4] - 2023-03-12
+### Changed
+- Change button、checkbox、dropdownBackground color 
+
 ## [1.0.3] - 2023-03-11
 ### Changed
 - Change editor.selectionBackground
