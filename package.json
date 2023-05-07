@@ -48,7 +48,7 @@
 	"devDependencies": {
 		"@commitlint/cli": "^17.4.4",
 		"@commitlint/config-conventional": "^8.3.4",
-		"@vscode/vsce": "^2.18.0",
+		"@vscode/vsce": "^2.19.0",
 		"husky": "^3.1.0",
 		"minimist": ">=1.2.2"
 	},
