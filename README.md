@@ -30,7 +30,7 @@ Search the color in the file "themes/hbuilderx-soft-green-light-color-theme.json
 
 ## Publish
 ```bash
-npm i vsce -g
+npm install -g @vscode/vsce
 vsce login <your-publisher> ## paste "Personal Access Tokens"(https://dev.azure.com/ -> Users settings -> Personal access tokens -> New Token -> type Name -> Organization:All accessible organizations -> Scopes:Full access -> Create)
 vsce package
 vsce publish
