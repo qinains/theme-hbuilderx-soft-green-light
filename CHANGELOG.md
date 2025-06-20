@@ -4,6 +4,16 @@ All notable changes to the "HBuilderX Soft Green Light Theme" extension will be 
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [1.0.8] - 2025-06-20
+
+### Changed
+
+- Enhanced log level colors with better visibility and standard conventions
+- Improved editor highlighting for better text distinction
+- Added comprehensive support for various log file formats and scopes
+- Enabled debug console color settings for consistent log display
+- Fixed log DEBUG level visibility issue ([#15](https://github.com/qinains/theme-hbuilderx-soft-green-light/issues/15))
+
 ## [1.0.7] - 2025-01-11
 
 ### Changed
