@@ -82,7 +82,7 @@
 		"statusBarItem.hoverBackground": "#eae0c0",
 		"statusBarItem.prominentBackground": "#ddd6c1",
 		"tab.activeBackground": "#41a863",
-		"tab.activeForeground": "#ffffff",
+		"tab.activeForeground": "#404040",
 		"tab.border": "#ded0a0",
 		"tab.hoverBackground": "#41a863",
 		"tab.hoverForeground": "#ffffff",
@@ -1344,7 +1344,7 @@
 				"foreground": "#0366D6"
 			}
 		},
-		{
+				{
 			"name": "Log Level DEBUG",
 			"scope": [ "log.level.debug" ],
 			"settings": {

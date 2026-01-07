@@ -4,6 +4,12 @@ All notable changes to the "HBuilderX Soft Green Light Theme" extension will be 
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [1.0.9] - 2026-01-07
+
+### Changed
+
+- Trae bug fix
+
 ## [1.0.8] - 2025-06-20
 
 ### Changed
