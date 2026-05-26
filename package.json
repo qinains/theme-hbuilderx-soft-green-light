@@ -2,7 +2,7 @@
 	"name": "theme-hbuilderx-soft-green-light",
 	"displayName": "%displayName%",
 	"description": "%description%",
-	"version": "1.0.9",
+	"version": "1.1.0",
 	"homepage": "https://github.com/qinains/theme-hbuilderx-soft-green-light/blob/master/README.md",
 	"repository": {
 		"type": "git",
@@ -15,7 +15,7 @@
 	"license": "MIT",
 	"icon": "icon.png",
 	"engines": {
-		"vscode": "*"
+		"vscode": "^1.60.0"
 	},
 	"categories": [
 		"Themes",
@@ -31,14 +31,99 @@
 		"green",
 		"yellow",
 		"solarized",
-		"light"
+		"light",
+		"dark",
+		"auto-switch"
 	],
+	"activationEvents": ["onStartupFinished"],
+	"main": "./dist/extension.js",
+	"scripts": {
+		"vscode:prepublish": "webpack --mode production",
+		"compile": "webpack --mode development",
+		"watch": "webpack --mode development --watch",
+		"build": "npm run compile",
+		"package": "vsce package"
+	},
+	"devDependencies": {
+		"@types/node": "^20.0.0",
+		"@types/vscode": "^1.60.0",
+		"@vscode/vsce": "^2.19.0",
+		"ts-loader": "^9.0.0",
+		"typescript": "^5.0.0",
+		"webpack": "^5.0.0",
+		"webpack-cli": "^5.0.0"
+	},
 	"contributes": {
 		"themes": [
 			{
 				"label": "HBuilderX Soft Green Light",
 				"uiTheme": "vs",
 				"path": "./themes/hbuilderx-soft-green-light-color-theme.json"
+			},
+			{
+				"id": "hbuilderx-soft-green-dark",
+				"label": "HBuilderX Soft Green Dark",
+				"uiTheme": "vs-dark",
+				"path": "./themes/hbuilderx-soft-green-dark-color-theme.json"
+			}
+		],
+		"configuration": {
+			"title": "HBuilderX Soft Green Theme",
+			"properties": {
+				"hbuilderxSoftGreen.autoSwitchMode": {
+					"type": "string",
+					"enum": ["system", "scheduled", "seasonal", "manual"],
+					"enumDescriptions": [
+						"Follow system theme (check every 5 min)",
+						"Switch at scheduled times",
+						"Auto-adjust by season (approx sunrise/sunset)",
+						"Manual switch only"
+					],
+					"default": "system",
+					"description": "Auto-switch mode for dark/light theme"
+				},
+				"hbuilderxSoftGreen.lightTime": {
+					"type": "string",
+					"default": "07:00",
+					"pattern": "^([01]?[0-9]|2[0-3]):[0-5][0-9]$",
+					"description": "Time to switch to light theme (HH:MM, scheduled mode)"
+				},
+				"hbuilderxSoftGreen.darkTime": {
+					"type": "string",
+					"default": "19:00",
+					"pattern": "^([01]?[0-9]|2[0-3]):[0-5][0-9]$",
+					"description": "Time to switch to dark theme (HH:MM, scheduled mode)"
+				}
+			}
+		},
+		"commands": [
+			{
+				"command": "hbuilderxSoftGreen.toggleTheme",
+				"title": "Toggle Theme (Light/Dark)"
+			},
+			{
+				"command": "hbuilderxSoftGreen.setModeSystem",
+				"title": "HBuilderX Soft Green: Set Mode → Follow System"
+			},
+			{
+				"command": "hbuilderxSoftGreen.setModeScheduled",
+				"title": "HBuilderX Soft Green: Set Mode → Scheduled Times"
+			},
+			{
+				"command": "hbuilderxSoftGreen.setModeSeasonal",
+				"title": "HBuilderX Soft Green: Set Mode → Seasonal"
+			},
+			{
+				"command": "hbuilderxSoftGreen.setModeManual",
+				"title": "HBuilderX Soft Green: Set Mode → Manual"
+			},
+			{
+				"command": "hbuilderxSoftGreen.setLightTime",
+				"title": "HBuilderX Soft Green: Set Light Theme Time"
+			},
+			{
+				"command": "hbuilderxSoftGreen.setDarkTime",
+				"title": "HBuilderX Soft Green: Set Dark Theme Time"
 			}
 		]
 	}

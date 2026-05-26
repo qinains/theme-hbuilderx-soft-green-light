@@ -4,6 +4,28 @@ All notable changes to the "HBuilderX Soft Green Light Theme" extension will be 
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [1.1.0] - 2026-05-26
+
+### Added
+
+- Dark theme variant (`HBuilderX Soft Green Dark`)
+- Auto-switch extension with four modes:
+  - **System**: Follow OS theme (macOS, Linux, Windows)
+  - **Scheduled**: Switch at user-defined times
+  - **Seasonal**: Auto-adjust by month (approx sunrise/sunset)
+  - **Manual**: Toggle via status bar button
+- Configuration settings in VSCode preferences
+- Commands for mode selection and time setting
+- Status bar button (`$(color-mode)` icon) for quick toggle
+- Default mode set to `system` (follows OS theme automatically)
+
+### Changed
+
+- TypeScript build system with webpack bundling
+- Extension activates on startup (`onStartupFinished`)
+- Warm dark background (#1e2419, not pure black)
+- Consistent green accent across both themes
+
 ## [1.0.9] - 2026-01-07
 
 ### Changed
