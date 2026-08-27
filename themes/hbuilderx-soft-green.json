@@ -13,7 +13,7 @@
         "border.selected": "#41a863",
         "border.transparent": "#00000000",
         "border.disabled": "#ded0a0",
-        "elevated_surface.background": "#f2f8ec",
+        "elevated_surface.background": "#fffae8",
         "surface.background": "#fffae8",
         "background": "#fffae8",
         "background.appearance": "opaque",

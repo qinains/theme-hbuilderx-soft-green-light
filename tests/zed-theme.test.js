@@ -25,6 +25,7 @@ assert.equal(light.name, "HBuilderX Soft Green Light");
 assert.equal(dark.name, "HBuilderX Soft Green Dark");
 
 assert.equal(light.style.background, "#fffae8");
+assert.equal(light.style["elevated_surface.background"], "#fffae8");
 assert.equal(light.style["editor.background"], "#fffae8");
 assert.equal(light.style["editor.gutter.background"], "#fffae8");
 assert.equal(light.style["terminal.background"], "#fffae8");
