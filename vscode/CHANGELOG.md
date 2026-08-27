@@ -40,7 +40,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - Improved editor highlighting for better text distinction
 - Added comprehensive support for various log file formats and scopes
 - Enabled debug console color settings for consistent log display
-- Fixed log DEBUG level visibility issue ([#15](https://github.com/qinains/theme-hbuilderx-soft-green-light/issues/15))
+- Fixed log DEBUG level visibility issue ([#15](https://github.com/qinains/hbuilderx-soft-green/issues/15))
 
 ## [1.0.7] - 2025-01-11
 

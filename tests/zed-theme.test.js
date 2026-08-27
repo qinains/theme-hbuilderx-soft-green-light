@@ -3,8 +3,8 @@ const fs = require("node:fs");
 const path = require("node:path");
 
 const root = path.resolve(__dirname, "..");
-const manifestPath = path.join(root, "extension.toml");
-const themePath = path.join(root, "themes", "hbuilderx-soft-green.json");
+const manifestPath = path.join(root, "zed", "extension.toml");
+const themePath = path.join(root, "zed", "themes", "hbuilderx-soft-green.json");
 
 assert.ok(fs.existsSync(manifestPath), "extension.toml must exist");
 assert.ok(fs.existsSync(themePath), "Zed theme family must exist");

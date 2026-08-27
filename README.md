@@ -1,34 +1,42 @@
-# HBuilderX Soft Green Theme
+# HBuilderX Soft Green
 
-The healthiest theme for your eyes!
+A soft green theme family for VS Code and Zed, with light and dark variants.
 
-## Screenshot
+![Preview](images/preview.png)
 
-Preview
-![Screenshot](https://raw.githubusercontent.com/qinains/theme-hbuilderx-soft-green-light/master/images/preview.png)
+## Editors
 
-## Features
+### VS Code
 
-- **Two themes**: Light and Dark variants
-- **Auto-switch**: System, Scheduled, Seasonal, Manual modes
-- **Default**: Follows OS theme automatically
+The VS Code extension lives in [`vscode/`](vscode/).
 
-## Install
+```bash
+cd vscode
+npm install
+npm run compile
+npm run package
+```
 
-Install from [VSCode Marketplace](https://marketplace.visualstudio.com/items?itemName=lninl.theme-hbuilderx-soft-green-light).
+Install it from the
+[VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=lninl.theme-hbuilderx-soft-green-light).
 
 ### Zed
 
-The repository also includes native Zed light and dark variants. To install them
-locally while developing:
+The Zed extension lives in [`zed/`](zed/) and provides:
 
-1. Open the command palette in Zed.
-2. Run `zed: install dev extension`.
-3. Select this repository directory.
-4. Choose `HBuilderX Soft Green Light` or `HBuilderX Soft Green Dark` from the
-   theme selector.
+- `HBuilderX Soft Green Light`
+- `HBuilderX Soft Green Dark`
 
-To follow the operating system appearance automatically, use:
+For local development, run `zed: install dev extension` and select `zed/`.
+
+Validate the Zed theme from the repository root:
+
+```bash
+cd vscode
+npm run test:zed
+```
+
+To follow the operating system appearance automatically:
 
 ```json
 {
@@ -39,64 +47,6 @@ To follow the operating system appearance automatically, use:
   }
 }
 ```
-
-## Usage
-
-### Quick Toggle
-
-Click status bar `$(color-mode)` icon, or run:
-- `Toggle Theme (Light/Dark)`
-
-### Auto-Switch Settings
-
-Settings (Cmd+,) → search "HBuilderX Soft Green":
-
-| Setting | Description | Default |
-|---------|-------------|---------|
-| `autoSwitchMode` | System/Scheduled/Seasonal/Manual | `system` |
-| `lightTime` | Light theme time (HH:MM) | `07:00` |
-| `darkTime` | Dark theme time (HH:MM) | `19:00` |
-
-## Develop
-
-### Find color
-
-Help → Toggle Developer Tools → Select element → Copy HEX color.
-
-### Change color
-
-Edit `themes/hbuilderx-soft-green-light-color-theme.json` or `themes/hbuilderx-soft-green-dark-color-theme.json`. Run "Extension" in DEBUG toolbar.
-
-### Save theme
-
-Command Palette → `Developer: Generate Color Theme From Current Settings`.
-
-### Build
-
-```bash
-npm install
-npm run compile
-npm run package
-```
-
-Validate the Zed theme:
-
-```bash
-npm run test:zed
-```
-
-## Publish
-
-```bash
-npm install -g @vscode/vsce
-vsce login <your-publisher> ## paste "Personal Access Tokens"(https://dev.azure.com/ -> Users settings -> Personal access tokens -> New Token -> type Name -> Organization:All accessible organizations -> Scopes:Full access -> Create)
-vsce package
-vsce publish
-```
-
-## Changelog
-
-See [CHANGELOG.md](CHANGELOG.md).
 
 ## License
 

@@ -3,13 +3,13 @@
 	"displayName": "%displayName%",
 	"description": "%description%",
 	"version": "1.1.0",
-	"homepage": "https://github.com/qinains/theme-hbuilderx-soft-green-light/blob/master/README.md",
+	"homepage": "https://github.com/qinains/hbuilderx-soft-green/blob/main/README.md",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/qinains/theme-hbuilderx-soft-green-light"
+		"url": "https://github.com/qinains/hbuilderx-soft-green"
 	},
 	"bugs": {
-		"url": "https://github.com/qinains/theme-hbuilderx-soft-green-light/issues"
+		"url": "https://github.com/qinains/hbuilderx-soft-green/issues"
 	},
 	"publisher": "lninl",
 	"license": "MIT",
@@ -38,7 +38,7 @@
 	"activationEvents": ["onStartupFinished"],
 	"main": "./dist/extension.js",
 	"scripts": {
-		"test:zed": "node tests/zed-theme.test.js",
+		"test:zed": "node ../tests/zed-theme.test.js",
 		"vscode:prepublish": "webpack --mode production",
 		"compile": "webpack --mode development",
 		"watch": "webpack --mode development --watch",
