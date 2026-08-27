@@ -17,6 +17,29 @@ Preview
 
 Install from [VSCode Marketplace](https://marketplace.visualstudio.com/items?itemName=lninl.theme-hbuilderx-soft-green-light).
 
+### Zed
+
+The repository also includes native Zed light and dark variants. To install them
+locally while developing:
+
+1. Open the command palette in Zed.
+2. Run `zed: install dev extension`.
+3. Select this repository directory.
+4. Choose `HBuilderX Soft Green Light` or `HBuilderX Soft Green Dark` from the
+   theme selector.
+
+To follow the operating system appearance automatically, use:
+
+```json
+{
+  "theme": {
+    "mode": "system",
+    "light": "HBuilderX Soft Green Light",
+    "dark": "HBuilderX Soft Green Dark"
+  }
+}
+```
+
 ## Usage
 
 ### Quick Toggle
@@ -54,6 +77,12 @@ Command Palette → `Developer: Generate Color Theme From Current Settings`.
 npm install
 npm run compile
 npm run package
+```
+
+Validate the Zed theme:
+
+```bash
+npm run test:zed
 ```
 
 ## Publish

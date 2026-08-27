@@ -38,6 +38,7 @@
 	"activationEvents": ["onStartupFinished"],
 	"main": "./dist/extension.js",
 	"scripts": {
+		"test:zed": "node tests/zed-theme.test.js",
 		"vscode:prepublish": "webpack --mode production",
 		"compile": "webpack --mode development",
 		"watch": "webpack --mode development --watch",
