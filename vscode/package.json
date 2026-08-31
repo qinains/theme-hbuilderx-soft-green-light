@@ -2,7 +2,7 @@
 	"name": "theme-hbuilderx-soft-green-light",
 	"displayName": "%displayName%",
 	"description": "%description%",
-	"version": "1.1.0",
+	"version": "1.1.1",
 	"homepage": "https://github.com/qinains/hbuilderx-soft-green/blob/main/README.md",
 	"repository": {
 		"type": "git",
@@ -15,7 +15,7 @@
 	"license": "MIT",
 	"icon": "icon.png",
 	"engines": {
-		"vscode": "^1.60.0"
+		"vscode": "^1.89.0"
 	},
 	"categories": [
 		"Themes",
@@ -35,9 +35,12 @@
 		"dark",
 		"auto-switch"
 	],
-	"activationEvents": ["onStartupFinished"],
+	"activationEvents": [
+		"onStartupFinished"
+	],
 	"main": "./dist/extension.js",
 	"scripts": {
+		"test": "tsx --test tests/**/*.test.ts",
 		"test:zed": "node ../tests/zed-theme.test.js",
 		"vscode:prepublish": "webpack --mode production",
 		"compile": "webpack --mode development",
@@ -47,9 +50,11 @@
 	},
 	"devDependencies": {
 		"@types/node": "^20.0.0",
-		"@types/vscode": "^1.60.0",
+		"@types/vscode": "1.89.0",
 		"@vscode/vsce": "^2.19.0",
+		"jsonc-parser": "^3.3.1",
 		"ts-loader": "^9.0.0",
+		"tsx": "^4.23.13",
 		"typescript": "^5.0.0",
 		"webpack": "^5.0.0",
 		"webpack-cli": "^5.0.0"
@@ -73,9 +78,14 @@
 			"properties": {
 				"hbuilderxSoftGreen.autoSwitchMode": {
 					"type": "string",
-					"enum": ["system", "scheduled", "seasonal", "manual"],
+					"enum": [
+						"system",
+						"scheduled",
+						"seasonal",
+						"manual"
+					],
 					"enumDescriptions": [
-						"Follow system theme (check every 5 min)",
+						"Follow the system color scheme using the editor's native setting",
 						"Switch at scheduled times",
 						"Auto-adjust by season (approx sunrise/sunset)",
 						"Manual switch only"

@@ -2,14 +2,12 @@
 
 import * as vscode from 'vscode';
 import {
-  getConfig,
   setMode,
   setLightTime,
   setDarkTime
 } from './configManager';
 import {
   toggleTheme,
-  startAutoSwitch,
   stopAutoSwitch,
   handleConfigChange
 } from './themeSwitcher';
@@ -40,19 +38,21 @@ export function activate(context: vscode.ExtensionContext): void {
   context.subscriptions.push(
     vscode.workspace.onDidChangeConfiguration(e => {
       if (e.affectsConfiguration('hbuilderxSoftGreen')) {
-        handleConfigChange();
+        runThemeUpdate();
       }
     })
   );
 
   // Start auto-switch based on current config
-  const config = getConfig();
-  startAutoSwitch();
+  runThemeUpdate();
+}
 
-  // If scheduled or seasonal mode, immediately check and apply correct theme
-  if (config.autoSwitchMode === 'scheduled' || config.autoSwitchMode === 'seasonal') {
-    handleConfigChange();
-  }
+function runThemeUpdate(): void {
+  void handleConfigChange().catch(error => {
+    const message = error instanceof Error ? error.message : String(error);
+    console.error('HBuilderX Soft Green theme switching failed:', error);
+    vscode.window.showErrorMessage(`HBuilderX Soft Green: Theme switching failed: ${message}`);
+  });
 }
 
 /**

@@ -5,8 +5,10 @@ A soft green light and dark theme family for VS Code.
 ## Features
 
 - Light and dark variants
-- System, scheduled, seasonal, and manual switching modes
+- Native system, scheduled, seasonal, and manual switching modes
 - Quick theme toggle from the status bar
+
+System mode configures `window.autoDetectColorScheme` together with the HBuilderX preferred light and dark themes. The status-bar toggle switches to manual mode.
 
 ## Development
 

@@ -4,6 +4,15 @@ All notable changes to the "HBuilderX Soft Green Light Theme" extension will be 
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [1.1.1] - 2026-08-31
+
+### Fixed
+
+- Use the editor's native color-scheme detection instead of polling the operating system every five minutes
+- Enforce the exact HBuilderX light/dark theme instead of treating any theme with the same brightness as equivalent
+- Make the status-bar toggle enter manual mode before switching
+- Improve light and dark UI text contrast in tabs, breadcrumbs, notifications, buttons, and extension views
+
 ## [1.1.0] - 2026-05-26
 
 ### Added
